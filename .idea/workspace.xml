@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7aed15a-d9a5-4853-8f27-646c8821f8f6" name="Changes" comment="Luchthaven Passagier">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Vliegtuig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Passagier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Passagier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Personeel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Personeel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Persoon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Persoon.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +43,9 @@
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2rIIHhv8n0O8uabaqNEm9s9nmtj" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -76,7 +83,7 @@
       <option name="presentableId" value="Default" />
       <updated>1736240079000</updated>
       <workItem from="1736240080093" duration="2023000" />
-      <workItem from="1736243544631" duration="11473000" />
+      <workItem from="1736243544631" duration="17952000" />
     </task>
     <task id="LOCAL-00001" summary="Luchthaven keuzemenu">
       <option name="closed" value="true" />
@@ -94,7 +101,23 @@
       <option name="project" value="LOCAL" />
       <updated>1736279759616</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Luchthaven Passagier">
+      <option name="closed" value="true" />
+      <created>1736280018212</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1736280018212</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Luchthaven Passagier">
+      <option name="closed" value="true" />
+      <created>1736281930668</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1736281930668</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

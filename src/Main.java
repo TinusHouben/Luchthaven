@@ -3,6 +3,7 @@ public class Main {
     public static void main(String[] args) {
         // scanner voor het declareren van variabelen
         Scanner input = new Scanner(System.in);
+
         int optie;
         // do while zodat de gebruiker een geldige optie moet ingeven
         do {
@@ -14,13 +15,16 @@ public class Main {
             System.out.println("4. Persoon boarden");
             System.out.println("5. Personeel toewijzen");
             System.out.println("6. Print vlucht informatie");
+
             // optie gelijkstellen aan de input van de gebruiker
             optie = input.nextInt();
+
             // check voor te kijken of de gebruiker een geldige optie in geeft + foutmelding indien foute input
             if (optie <= 0 || optie > 6) {
                 System.out.println("U heeft een ongeldige optie ingevoerd.");
             }
-            // kijken of het getal tussen de 1 en 6 ligt
+            
+            // while lus totdat de gebruiker een juiste optie heeft ingegeven
         } while (optie <= 0 || optie > 6);
 
 
