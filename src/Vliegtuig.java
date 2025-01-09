@@ -1,64 +1,81 @@
 import java.util.ArrayList;
-// subklasse vliegtuig aanmaken
-public class Vliegtuig extends Persoon{
-    private String vluchtnummer;
+
+/**
+ * De klasse vliegtuig bevat de nodige informatie over de vlucht, passagiers en het personeel
+ */
+public class Vliegtuig {
+    private String vluchtNummer;
     private String bestemming;
     private int economyPlaatsen;
     private int businessPlaatsen;
-    // arraylist waar de passagier van het vliegtuig in staan
     private ArrayList<Passagier> passagiers;
-    // arraylist waar de personeelsleden van het vliegtuig in staan
     private ArrayList<Personeel> crewLeden;
 
-// constructor voor het aanmaken van een vliegtuig
-    public Vliegtuig(String vluchtnummer, String bestemming, int economyPlaatsen, int businessPlaatsen){
-        this.vluchtnummer = vluchtnummer;
+    /**
+     * constructor voor het aanmaken van een vlucht
+     * @param vluchtNummer het nummer van de vlucht
+     * @param bestemming de bestemming van de vlucht
+     * @param economyPlaatsen de hoeveelheid economy plaatsen aanwezig zijn op het vliegtuig
+     * @param businessPlaatsen de hoeveelheid business plaatsen aanwezig zijn op het vliegtuig
+     */
+    public Vliegtuig(String vluchtNummer, String bestemming, int economyPlaatsen, int businessPlaatsen) {
+        this.vluchtNummer = vluchtNummer;
         this.bestemming = bestemming;
         this.economyPlaatsen = economyPlaatsen;
         this.businessPlaatsen = businessPlaatsen;
         this.passagiers = new ArrayList<>();
         this.crewLeden = new ArrayList<>();
     }
-// getters voor de bestemming en het vluchtnummer
-    public String getVluchtnummer() {
-        return vluchtnummer;
+
+
+    public String getVluchtNummer() {
+        return vluchtNummer;
     }
 
     public String getBestemming() {
         return bestemming;
     }
 
-    // methode om de vluchtinformatie af te printen
+    /**
+     * methode voor het afprinten van de vluchtinfo
+     */
     public void printVluchtInformatie() {
-        System.out.println("Vluchtnummer: " + vluchtnummer);
+        System.out.println("Vluchtnummer: " + vluchtNummer);
         System.out.println("Bestemming: " + bestemming);
-        System.out.println("Passagiers aantal: " + passagiers.size());
-        System.out.println("Crew aantal: " + crewLeden.size());
-    }
-
-    // methode om een passagier toe te voegen aan het vliegtuig
-    public void addPassagier(Passagier passagier){
-        // if lus om te kijken of er nog plaatsen vrij zijn
-        if (passagiers.size() < (economyPlaatsen + businessPlaatsen)) {
-            passagiers.add(passagier);
-
-        } else {
-            // foutmelding als er geen plaatsen meer zijn
-            System.out.println("Het vliegtuig is vol");
+        System.out.println("Aantal passagiers: " + passagiers.size());
+        System.out.println("Aantal crewleden: " + crewLeden.size());
+        System.out.println("Crewleden: ");
+        for (Personeel p : crewLeden) {
+            System.out.println("- " + p.getName() + " (" + p.getRol() + ")");
         }
     }
 
-    // methode om crewleden aan de vlucht toe te voegen
-    public void addCrew(Personeel personeel){
-        // if lus om te kijken of er niet te veel crewleden zijn
-        if (crewLeden.size() >= 5) {
-            crewLeden.add(personeel);
-            System.out.println("Crew lid toegevoegd");
-        } else
-            {
-                // foutmelding als er al te veel crewleden zijn
-            System.out.println("Er zijn al genoeg crewleden");
-            }
-
+    /**
+     * methode voor het toevoegen van een passagier aan een vlucht
+     * @param passagier de passagier die wordt toegevoegd
+     */
+    public void addPassagier(Passagier passagier) {
+        if (passagiers.size() < (economyPlaatsen + businessPlaatsen)) {
+            passagiers.add(passagier);
+            System.out.println("Passagier " + passagier.getName() + " toegevoegd aan vlucht " + vluchtNummer);
+        } else {
+            System.out.println("De vlucht is vol.");
+        }
     }
+
+    /**
+     * methode om personeel toe te voegen aan een vlucht
+     * @param personeel het personeel dat wordt toegevoegd
+     */
+    public void addPersoneel(Personeel personeel) {
+        if (crewLeden.size() < 5) {  // Limiet voor crewleden is 5
+            crewLeden.add(personeel);
+            System.out.println("Personeel " + personeel.getName() + " toegevoegd aan vlucht " + vluchtNummer);
+        } else {
+            System.out.println("Er is al genoeg personeel op vlucht " + vluchtNummer);
+        }
+    }
+
+
+
 }

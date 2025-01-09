@@ -1,15 +1,17 @@
-// sub klasse passagier om een passagier aan te maken
+/**
+ * de klasse passagier bevat de nodige informatie van het ticket en de bagage van de passagier
+ * de klasse erft over van de persoon klasse
+ */
 public class Passagier extends Persoon {
     private String ticket;
     private String bagage;
 
-// constructor die overerft van de superklasse om een passagier aan te maken
     public Passagier(String name, int age, String adres, String ticket, String bagage) {
         super(name, age, adres);
         this.ticket = ticket;
         this.bagage = bagage;
     }
-// getters voor ticket en bagage van een passagier
+
     public String getTicket() {
         return ticket;
     }
@@ -18,6 +20,7 @@ public class Passagier extends Persoon {
         return bagage;
     }
 
-
+    public String setTicket(String ticket){
+        return ticket;
     }
 }

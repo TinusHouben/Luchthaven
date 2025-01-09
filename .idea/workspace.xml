@@ -5,12 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7aed15a-d9a5-4853-8f27-646c8821f8f6" name="Changes" comment="Luchthaven Passagier">
-      <change afterPath="$PROJECT_DIR$/src/Vliegtuig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Luchthaven.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Vluchten.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Passagier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Passagier.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Personeel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Personeel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Persoon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Persoon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Vliegtuig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Vliegtuig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +41,9 @@
     &quot;accountId&quot;: &quot;16d1f5d3-5d90-4535-a6e3-d7d850ca2c14&quot;
   }
 }</component>
+  <component name="LLMProjectSettings">
+    <option name="turned_on" value="false" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -50,22 +55,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/guyho/IdeaProjects/Luchthaven/src/Main.java",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Luchthaven.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/guyho/IdeaProjects/Luchthaven/src/Main.java&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -84,6 +90,8 @@
       <updated>1736240079000</updated>
       <workItem from="1736240080093" duration="2023000" />
       <workItem from="1736243544631" duration="17952000" />
+      <workItem from="1736341563247" duration="10789000" />
+      <workItem from="1736425439743" duration="13630000" />
     </task>
     <task id="LOCAL-00001" summary="Luchthaven keuzemenu">
       <option name="closed" value="true" />
@@ -117,7 +125,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736281930668</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Luchthaven Passagier">
+      <option name="closed" value="true" />
+      <created>1736341594519</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1736341594519</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
